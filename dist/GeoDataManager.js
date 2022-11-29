@@ -367,7 +367,7 @@ var GeoDataManager = /** @class */ (function () {
             var longitude = coordinates[_this.config.longitudeFirst ? 0 : 1];
             var latitude = coordinates[_this.config.longitudeFirst ? 1 : 0];
             var latLng = nodes2ts_1.S2LatLng.fromDegrees(latitude, longitude);
-            return centerLatLng.getEarthDistance(latLng).toNumber() <= radiusInMeter;
+            return centerLatLng.getEarthDistance(latLng) <= radiusInMeter;
         });
     };
     /**
