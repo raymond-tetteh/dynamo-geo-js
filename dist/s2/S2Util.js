@@ -25,8 +25,8 @@ var S2Util = /** @class */ (function () {
         var lngReferenceUnit = centerPoint.longitude > 0.0 ? -1.0 : 1.0;
         var lngReferenceLatLng = nodes2ts_1.S2LatLng.fromDegrees(centerPoint.latitude, centerPoint.longitude
             + lngReferenceUnit);
-        var latForRadius = radiusInMeter / centerLatLng.getEarthDistance(latReferenceLatLng).toNumber();
-        var lngForRadius = radiusInMeter / centerLatLng.getEarthDistance(lngReferenceLatLng).toNumber();
+        var latForRadius = radiusInMeter / centerLatLng.getEarthDistance(latReferenceLatLng);
+        var lngForRadius = radiusInMeter / centerLatLng.getEarthDistance(lngReferenceLatLng);
         var minLatLng = nodes2ts_1.S2LatLng.fromDegrees(centerPoint.latitude - latForRadius, centerPoint.longitude - lngForRadius);
         var maxLatLng = nodes2ts_1.S2LatLng.fromDegrees(centerPoint.latitude + latForRadius, centerPoint.longitude + lngForRadius);
         return nodes2ts_1.S2LatLngRect.fromLatLng(minLatLng, maxLatLng);
