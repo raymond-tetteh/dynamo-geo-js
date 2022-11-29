@@ -14,9 +14,8 @@
   "author": "Rob Hogan <github@rhogan.net>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@types/decimal.js": "^0.0.30",
-    "@types/long": ">=3",
-    "nodes2ts": "^1.1.10"
+    "decimal.js": "^10.4.2",
+    "nodes2ts": "^3.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.0.0",

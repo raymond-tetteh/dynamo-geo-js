@@ -28,7 +28,7 @@ import {
 } from "../types";
 import { S2Manager } from "../s2/S2Manager";
 import { GeohashRange } from "../model/GeohashRange";
-import * as Long from "long";
+import Long from "long";
 import { PutItemInput, PutRequest } from "aws-sdk/clients/dynamodb";
 
 export class DynamoDBManager {
